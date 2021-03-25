@@ -142,32 +142,32 @@ $sections-ligth-grey: #c4c4c4;
 		& .swiper-wrapper{
 			width: 950px;
 		}
-		& .button-next, & .button-prev{
-			z-index: 10;
-			width: 59px;	
-			height: 59px;
-			border-radius: 50%;
-			background-color: $sections-ligth-grey;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			outline: none;
-			cursor: pointer;
-			transition: 0.4s;
-			&:hover{
-				transition: 0.4s;
-				background-color: $main-dark-grey;
-			}
-		}
 		& .swiper-pagination-bullet-active{
 			background-color: $main-dark-grey;
 		}
-		& .button-next{
-			margin-left: 80px;
+	}
+	&__button-next, &__button-prev{
+		z-index: 10;
+		width: 59px;	
+		height: 59px;
+		border-radius: 50%;
+		background-color: $sections-ligth-grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		outline: none;
+		cursor: pointer;
+		transition: 0.4s;
+		&:hover{
+			transition: 0.4s;
+			background-color: $main-dark-grey;
 		}
-		& .button-prev{
-			margin-right: 80px;
-		}
+	}
+	&__button-next{
+		margin-left: 80px;
+	}
+	&__button-prev{
+		margin-right: 80px;
 	}
 }
 .services{
@@ -287,4 +287,73 @@ $sections-ligth-grey: #c4c4c4;
 	&__wrapper{
 		padding-bottom: 90px;
 	}
+	&__content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 0;
+		position: relative;
+		& .swiper-container {
+			width: 1100px;
+			height: 200px;
+		}
+		& .swiper-slide{
+			background-color: #fff;
+		}
+		& .swiper-wrapper{
+		}
+	}
+	&__button-next, &__button-prev{
+		z-index: 10;
+		width: 59px;	
+		height: 59px;
+		border-radius: 50%;
+		background-color: $sections-ligth-grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		outline: none;
+		cursor: pointer;
+		transition: 0.4s;
+		&:hover{
+			transition: 0.4s;
+			background-color: $main-dark-grey;
+		}
+	}
+	&__button-next{
+		margin-left: 20px;
+	}
+	&__button-prev{
+		margin-right: 20px;
+	}
+}
+.consultation{
+	&{
+		background: rgb(102,102,102);
+		background: linear-gradient(90deg, rgba(102,102,102,1) 48%, rgba(231,231,231,1) 48%);
+		position: relative;
+		display: flex;
+	}
+	// Styles for background
+	//****************************//
+	&__wrapper{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	&__left-side{
+		color: #fff;
+		background-color: $main-dark-grey;
+		width: 460px;
+		padding: 100px 10px 120px 10px;
+		& img{
+			padding: 36px 0;
+		}
+	}
+	&__right-side{
+		width: 820px;
+		background-color: $main-ligth-grey;
+		height: 100%;
+	}
+	//****************************//
 }

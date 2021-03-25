@@ -182,37 +182,40 @@ p {
     height: 446px; }
   .slider__body .swiper-wrapper {
     width: 950px; }
-  .slider__body .button-next, .slider__body .button-prev {
-    z-index: 10;
-    width: 59px;
-    height: 59px;
-    border-radius: 50%;
-    background-color: #c4c4c4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s; }
-    .slider__body .button-next:hover, .slider__body .button-prev:hover {
-      -webkit-transition: 0.4s;
-      -o-transition: 0.4s;
-      transition: 0.4s;
-      background-color: #666; }
   .slider__body .swiper-pagination-bullet-active {
     background-color: #666; }
-  .slider__body .button-next {
-    margin-left: 80px; }
-  .slider__body .button-prev {
-    margin-right: 80px; }
+
+.slider__button-next, .slider__button-prev {
+  z-index: 10;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+  .slider__button-next:hover, .slider__button-prev:hover {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: #666; }
+
+.slider__button-next {
+  margin-left: 80px; }
+
+.slider__button-prev {
+  margin-right: 80px; }
 
 .services {
   background-color: #e7e7e7; }
@@ -373,3 +376,89 @@ p {
 
 .our-clients__wrapper {
   padding-bottom: 90px; }
+
+.our-clients__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+  position: relative; }
+  .our-clients__content .swiper-container {
+    width: 1100px;
+    height: 200px; }
+  .our-clients__content .swiper-slide {
+    background-color: #fff; }
+
+.our-clients__button-next, .our-clients__button-prev {
+  z-index: 10;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+  .our-clients__button-next:hover, .our-clients__button-prev:hover {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: #666; }
+
+.our-clients__button-next {
+  margin-left: 20px; }
+
+.our-clients__button-prev {
+  margin-right: 20px; }
+
+.consultation {
+  background: #666666;
+  background: -webkit-gradient(linear, left top, right top, color-stop(48%, #666666), color-stop(48%, #e7e7e7));
+  background: -webkit-linear-gradient(left, #666666 48%, #e7e7e7 48%);
+  background: -o-linear-gradient(left, #666666 48%, #e7e7e7 48%);
+  background: linear-gradient(90deg, #666666 48%, #e7e7e7 48%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.consultation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.consultation__left-side {
+  color: #fff;
+  background-color: #666;
+  width: 460px;
+  padding: 100px 10px 120px 10px; }
+  .consultation__left-side img {
+    padding: 36px 0; }
+
+.consultation__right-side {
+  width: 820px;
+  background-color: #e7e7e7;
+  height: 100%; }
