@@ -39,24 +39,46 @@ p {
   border-radius: 20px; }
   .button__wrapper.white {
     background-color: #fff;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s; }
-    .button__wrapper.white h4 {
-      color: #666;
-      -webkit-transition: 0.4s;
-      -o-transition: 0.4s;
-      transition: 0.4s; }
-  .button__wrapper:hover.white {
+    border: 1px solid #fff;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s;
-    background-color: #7e7e7e; }
-    .button__wrapper:hover.white h4 {
+    transition: 0.2s; }
+    .button__wrapper.white h4 {
+      color: #666;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .button__wrapper.white:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      background-color: #7e7e7e; }
+      .button__wrapper.white:hover h4 {
+        color: #fff;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+  .button__wrapper.grey {
+    background-color: #666;
+    border: 1px solid #666;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .button__wrapper.grey h4 {
       color: #fff;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
+    .button__wrapper.grey:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      background-color: #fff; }
+      .button__wrapper.grey:hover h4 {
+        color: #666;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
 
 .main-title__wrapper {
   width: 100%;
@@ -278,6 +300,11 @@ p {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2; }
+  .consultation__inputs > .services__element:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1; }
   .services__element:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -293,6 +320,11 @@ p {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1; }
+  .consultation__inputs > .services__element:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1; }
   .services__element:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
@@ -303,6 +335,9 @@ p {
   .services__row:nth-child(3) > .services__element:nth-child(3) {
   -ms-grid-row: 2;
   -ms-grid-column: 2; }
+  .consultation__inputs > .services__element:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1; }
   .services__element:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 4;
@@ -314,10 +349,18 @@ p {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2; }
+  .consultation__inputs > .services__element:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1; }
   .services__element:nth-child(5) {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: e; }
+  .consultation__inputs > .services__element:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3; }
   .services__element:nth-child(6) {
     -ms-grid-row: 2;
     -ms-grid-column: 4;
@@ -446,19 +489,128 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
 
 .consultation__left-side {
   color: #fff;
   background-color: #666;
   width: 460px;
-  padding: 100px 10px 120px 10px; }
+  padding: 100px 0 120px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .consultation__left-side img {
-    padding: 36px 0; }
+    padding: 25px 0; }
+  .consultation__left-side div {
+    max-width: 80%; }
+  .consultation__left-side h3 {
+    padding-bottom: 20px; }
 
 .consultation__right-side {
   width: 820px;
   background-color: #e7e7e7;
-  height: 100%; }
+  padding: 100px 55px 120px 55px; }
+
+.consultation__inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "a b" "c d" "e e";
+  gap: 60px;
+  padding-bottom: 60px; }
+  .consultation__inputs input {
+    padding: 0 40px;
+    font-size: 18px;
+    height: 73px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #777777; }
+  .consultation__inputs input:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: a; }
+  .consultation__inputs input:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: b; }
+  .consultation__inputs input:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: c; }
+  .consultation__inputs input:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: d; }
+  .consultation__inputs input:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: e; }
+
+.consultation__form .button__wrapper {
+  width: 341px;
+  height: 75px; }
+
+.consultation__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .consultation__button > *:first-child {
+    margin-right: 30px; }
+
+.footer {
+  background-color: #666;
+  color: #fff; }
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 100px 0; }
+  .footer__wrapper > * {
+    height: 100%; }
+
+.footer__left-side div {
+  padding-bottom: 30px; }
+
+.bottom {
+  color: #fff;
+  background-color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.bottom__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
