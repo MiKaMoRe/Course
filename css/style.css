@@ -20,6 +20,11 @@ p {
 html {
   scroll-behavior: smooth; }
 
+button {
+  border: none;
+  outline: none;
+  border-radius: 20px; }
+
 * {
   margin: 0;
   padding: 0;

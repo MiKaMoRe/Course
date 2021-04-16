@@ -11,6 +11,11 @@ $main-normal-grey: #7e7e7e;
 $main-dark-grey: #666;
 $sections-ligth-grey: #c4c4c4;
 
+button{
+	border: none;
+	outline: none;
+	border-radius: 20px;
+}
 *{
 	margin: 0;
 	padding: 0;
