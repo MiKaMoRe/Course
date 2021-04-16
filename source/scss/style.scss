@@ -4,6 +4,7 @@ h3{font-size: 36px;}
 h4{font-size: 24px;}
 h6{font-size: 14px;}
 p{font-size: 18px; padding-bottom: 25px;}
+html {scroll-behavior: smooth;}
 
 $main-ligth-grey: #e7e7e7;
 $main-normal-grey: #7e7e7e;
@@ -132,6 +133,9 @@ $sections-ligth-grey: #c4c4c4;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		& a{
+			color: #fff;
 		}
 	}
 }

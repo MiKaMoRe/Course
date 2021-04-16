@@ -17,6 +17,9 @@ p {
   font-size: 18px;
   padding-bottom: 25px; }
 
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -180,6 +183,8 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  .navigation__button a {
+    color: #fff; }
 
 .slider__wrapper {
   padding-top: 32px; }
