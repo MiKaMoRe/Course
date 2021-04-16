@@ -29,17 +29,16 @@ $sections-ligth-grey: #c4c4c4;
 		border-radius: 20px;
 		&.white{
 			background-color: #fff;
-
 			border: 1px solid #fff;
 			transition: 0.2s;
-			& h4{
+			& h4, & button{
 				color: $main-dark-grey;
 				transition: 0.2s;
 			}
 			&:hover{
 				transition: 0.2s;
 				background-color: $main-normal-grey;
-				& h4{
+				& h4, & button{
 					color: #fff;
 					transition: 0.2s;
 				}
@@ -50,14 +49,14 @@ $sections-ligth-grey: #c4c4c4;
 
 			border: 1px solid $main-dark-grey;
 			transition: 0.2s;
-			& h4{
+			& h4, & button{
 				color: #fff;
 				transition: 0.2s;
 			}
 			&:hover{
 				transition: 0.2s;
 				background-color: #fff;
-				& h4{
+				& h4, & button{
 					color: $main-dark-grey;
 					transition: 0.2s;
 				}
@@ -65,6 +64,8 @@ $sections-ligth-grey: #c4c4c4;
 		}
 	}
 	& button{
+		font-weight: bold;
+		font-size: 24px;
 		border: none;
 		outline: none;
 		border-radius: 20px;
